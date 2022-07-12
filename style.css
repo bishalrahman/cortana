@@ -1,0 +1,155 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Tahoma;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.control-unit{
+    width: 500px;
+    background-color: rgb(240, 248, 255);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    transition: 0.8s;
+    margin: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+h2{
+    color: rgb(34, 34, 34);
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    font-weight:500;
+}
+i{
+    font-size: 50px;
+    color: white;
+    background-color: rgb(0, 36, 102);
+    padding: 20px;
+    border-radius: 30px;
+    transition: background 0.5s;
+    margin: 5px 0px;
+    cursor: pointer;
+
+}
+#question{
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    color: rgb(0, 36, 102);
+}
+#search-input{
+    width: 95%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid gray;
+    background-color: rgb(228, 239, 255);
+    text-align: center;
+
+}
+#output{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    background-color: rgb(0, 36, 102);
+    padding: 20px;
+    color: white;
+    border-radius:  10px;
+    text-transform: capitalize;
+}
+.istart{
+    background-color: white;
+    color: rgb(0, 36, 102);
+    border: 2px solid rgb(0, 36, 102);
+    animation-name: newstart;
+    animation-duration: 800ms;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite; 
+}
+.outer{
+    animation-name: start;
+    animation-duration: 500ms;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.outer-main-style{
+    width: 100px;
+    display: inline-block;
+    border-radius: 35px;
+    margin: 20px 0px;
+    overflow: hidden;
+    padding: 5px 0px;
+}
+@keyframes start {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0px 0px 50px rgba(109, 109, 109, 0.5);
+        
+    }
+}
+@keyframes newstart {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    
+    }
+}
+@media screen and (max-width:600px){
+    .main-container{
+        padding: 0px 0px;
+
+    }
+    .control-unit{
+        padding: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }  
+}
+.mode{
+    text-align: right;
+}
+.mode marquee{
+    width: 95%;
+    float: left;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    border-right:2px solid ;
+}
+.mode i{
+    width: 5%;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background-color:transparent;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    float:right;
+}
